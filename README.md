@@ -1,1 +1,3 @@
 # CodeClause_MusicStreamingApplication
+This is a Music Player page that contains songs which you can play, pause, play the next song, play the previous song, seek the progress bar.
+Enjoy Listening...
