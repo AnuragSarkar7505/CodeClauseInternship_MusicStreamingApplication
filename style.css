@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body
+{
+    background-color: rgb(180, 8, 128);
+    overflow: visible;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content-container 
+{
+    overflow: hidden;
+}
+
+nav
+{
+    font-family: 'Prompt', sans-serif;
+}
+
+nav ul
+{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li
+{
+    padding: 0 12px;
+}
+
+.brand img
+{
+    width: 45px;
+    padding: 0 8px;
+}
+
+.brand
+{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+@keyframes glow 
+{
+    0% 
+    {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        color: rgba(255, 0, 0, 0.5); /* Change text color */
+    }
+    50% 
+    {
+        text-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+        color: rgba(255, 255, 0, 0.9); /* Change text color */
+    }
+    100% 
+    {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        color: rgba(0, 255, 0, 0.5); /* Change text color */
+    }
+}
+
+.glow 
+{
+    animation: glow 1s infinite;
+}
+
+.center-heading 
+{
+    animation: center-heading 2s infinite;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add some space between the headings */
+    color: #fff; /* Text color */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Letter spacing for the text */
+}
+
+@keyframes center-heading 
+{
+    0% 
+    {
+        transform: scale(1);
+    }
+    25% 
+    {
+        transform: scale(1.1);
+    }
+    50% 
+    {
+        transform: scale(1);
+    }
+    75% 
+    {
+        transform: scale(1.1);
+    }
+    100% 
+    {
+        transform: scale(1);
+    }
+}
+
+/* Apply hover effect
+.center-heading:hover 
+{
+    transform: scale(1.05); /* Scale the text on hover */
+    /* transition: transform 0.2s ease-in-out; /* Smooth scaling effect */
+
+.container
+{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 14px;
+    padding: 30px;
+    background-image: url('arijit-singh-on-a-purple-stage-performance-r3f1t3glp8xq5bvv.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bottom
+{
+    position: relative;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.icons i
+{
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.icons i:hover
+{
+    transform: scale(1.05); /* Scale the text on hover */
+    transition: transform 0.2s ease-in-out;
+}
+
+#musicbar
+{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songs
+{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    /* width: 150%; */
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songcontainer
+{
+    margin-top: 30px;
+}
+
+.songinfo
+{
+    position: absolute;
+    left: 8vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songinfo img
+{
+    padding-right: 5%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    text-align: center;
+}
+
+#gif 
+{
+    width: 64px; /* Adjust the size as needed */
+    padding-left: 20%;
+}
+
+#mastersongname 
+{
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    margin-left: 20px; /* Add some space between the GIF and the song name */
+    display:inline-block; /* Display the song name inline with the GIF */
+    vertical-align:auto; /* Vertically align the song name with the middle of the GIF */
+}
+
+.songs img
+{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.timestamp
+{
+    margin: 0 23px;
+}
+
+.timestamp i
+{
+    cursor: pointer;
+}
+
+.time-labels 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+    position: absolute;
+    left: 12;
+    /* right: 12; */
+    bottom: 71px; /* Adjust as needed */
+    width: 87%;
+}
+
+#currentTime, #totalDuration 
+{
+    font-family: 'Varela Round', sans-serif;
+}
+
+#currentTime 
+{
+    margin-right: 8px;
+}
+
+#totalDuration 
+{
+    margin-left: 8px;
+}
+
+
+@media only screen and (max-width: 1100px) 
+{
+    body 
+    {
+      background-color:darkseagreen;
+    }
+}
